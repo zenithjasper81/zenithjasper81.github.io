@@ -1,0 +1,1630 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>911吃瓜爆料网_热点社区_品牌官方内容门户</title>
+<meta name="description" content="911吃瓜爆料网官方网站，聚焦热点话题与社区爆料内容的视频品牌门户，汇聚原创创作者与精品影像，打造值得信赖的内容生态。">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23e63946'/%3E%3Ccircle cx='32' cy='26' r='11' fill='%23fff'/%3E%3Cpath d='M22 46c0-6 4.5-10 10-10s10 4 10 10' fill='%23fff'/%3E%3C/svg%3E">
+<style>
+:root{
+  --gc-bg:#f7f4ef;
+  --gc-ink:#1b1b1f;
+  --gc-ink-soft:#4a4a55;
+  --gc-line:#e3ddd3;
+  --gc-red:#e63946;
+  --gc-red-deep:#b81f2c;
+  --gc-amber:#f4a261;
+  --gc-navy:#22223b;
+  --gc-cream:#fffdf9;
+  --gc-radius:14px;
+  --gc-shadow:0 8px 26px rgba(34,34,59,.09);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  font-family:"PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,sans-serif;
+  background:var(--gc-bg);
+  color:var(--gc-ink);
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+button{font-family:inherit;cursor:pointer;border:none;background:none}
+ul{list-style:none}
+.gc-container{width:100%;max-width:1180px;margin:0 auto;padding:0 22px}
+.gc-sticky-wrap{position:sticky;top:0;z-index:60}
+
+/* 公告条 */
+.gc-notice-bar{
+  background:linear-gradient(90deg,var(--gc-red),var(--gc-red-deep));
+  color:#fff;font-size:13.5px;letter-spacing:.2px;
+}
+.gc-notice-inner{
+  display:flex;align-items:center;gap:14px;
+  padding:9px 22px;max-width:1180px;margin:0 auto;overflow:hidden;
+}
+.gc-notice-tag{
+  flex:0 0 auto;background:rgba(255,255,255,.2);
+  padding:1px 9px;border-radius:20px;font-size:12px;font-weight:600;
+}
+.gc-notice-track{
+  display:flex;gap:44px;white-space:nowrap;
+  animation:gcMarquee 26s linear infinite;
+}
+.gc-notice-track span{opacity:.96}
+@keyframes gcMarquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+
+/* 页头 */
+.gc-header{
+  background:rgba(255,253,249,.96);
+  backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--gc-line);
+}
+.gc-header-inner{
+  display:flex;align-items:center;gap:26px;
+  height:70px;max-width:1180px;margin:0 auto;padding:0 22px;
+}
+.gc-logo{display:flex;align-items:center;gap:10px;flex:0 0 auto}
+.gc-logo-mark{
+  width:38px;height:38px;border-radius:11px;
+  background:linear-gradient(135deg,var(--gc-red),var(--gc-amber));
+  color:#fff;font-weight:800;font-size:17px;
+  display:flex;align-items:center;justify-content:center;
+  letter-spacing:-.5px;
+}
+.gc-logo-text{font-size:19px;font-weight:800;letter-spacing:.5px}
+.gc-logo-text small{display:block;font-size:10.5px;font-weight:500;color:var(--gc-ink-soft);letter-spacing:2px}
+.gc-nav{display:flex;gap:4px;flex:1 1 auto;flex-wrap:wrap}
+.gc-nav a{
+  padding:7px 13px;border-radius:9px;font-size:14.5px;color:var(--gc-ink-soft);
+  transition:.2s;font-weight:500;
+}
+.gc-nav a:hover,.gc-nav a.gc-nav-active{background:#f1e9df;color:var(--gc-red-deep)}
+.gc-header-actions{display:flex;align-items:center;gap:10px;flex:0 0 auto}
+.gc-search{
+  display:flex;align-items:center;gap:7px;
+  background:#f1ece4;border:1px solid transparent;border-radius:10px;
+  padding:6px 11px;transition:.2s;
+}
+.gc-search:focus-within{border-color:var(--gc-red);background:#fff}
+.gc-search input{
+  border:none;background:none;outline:none;font-size:13.5px;
+  width:132px;color:var(--gc-ink);
+}
+.gc-btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:7px;
+  padding:9px 20px;border-radius:10px;font-size:14px;font-weight:600;
+  transition:.22s;border:1px solid transparent;
+}
+.gc-btn-primary{background:var(--gc-red);color:#fff}
+.gc-btn-primary:hover{background:var(--gc-red-deep);transform:translateY(-1px)}
+.gc-btn-ghost{background:#fff;color:var(--gc-ink);border-color:var(--gc-line)}
+.gc-btn-ghost:hover{border-color:var(--gc-red);color:var(--gc-red-deep)}
+.gc-burger{display:none;flex-direction:column;gap:5px;padding:8px;border-radius:9px;background:#f1ece4}
+.gc-burger span{display:block;width:20px;height:2px;background:var(--gc-ink);border-radius:2px}
+
+/* 首屏 */
+.gc-hero{padding:54px 0 44px;background:
+  radial-gradient(900px 380px at 88% -8%,rgba(244,162,97,.22),transparent 70%),
+  radial-gradient(700px 360px at 2% 100%,rgba(230,57,70,.09),transparent 72%);
+}
+.gc-hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:46px;align-items:center}
+.gc-hero-kicker{
+  display:inline-flex;align-items:center;gap:8px;
+  background:#fff;border:1px solid var(--gc-line);border-radius:30px;
+  padding:5px 15px;font-size:12.5px;color:var(--gc-red-deep);font-weight:600;
+  margin-bottom:18px;
+}
+.gc-hero-kicker::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--gc-red)}
+h1.gc-h1{
+  font-size:clamp(34px,4.4vw,52px);line-height:1.16;
+  font-weight:900;letter-spacing:-.5px;margin-bottom:16px;
+}
+h1.gc-h1 em{
+  font-style:normal;color:var(--gc-red);
+  background:linear-gradient(transparent 68%,rgba(244,162,97,.45) 68%);
+  padding:0 2px;
+}
+.gc-hero-lead{font-size:15.5px;color:var(--gc-ink-soft);margin-bottom:22px;max-width:540px}
+.gc-hero-lead strong{color:var(--gc-ink);font-weight:700}
+.gc-hero-cta{display:flex;gap:12px;flex-wrap:wrap;margin-bottom:30px}
+.gc-stats{display:flex;gap:34px;flex-wrap:wrap}
+.gc-stat-num{font-size:26px;font-weight:900;color:var(--gc-red-deep);line-height:1.2}
+.gc-stat-label{font-size:12.5px;color:var(--gc-ink-soft)}
+.gc-hero-visual{position:relative}
+.gc-hero-cover{
+  border-radius:20px;overflow:hidden;box-shadow:var(--gc-shadow);
+  border:5px solid #fff;position:relative;background:#22223b;
+}
+.gc-hero-cover img{width:100%;aspect-ratio:16/11;object-fit:cover}
+.gc-play-badge{
+  position:absolute;inset:0;display:flex;align-items:center;justify-content:center;
+  pointer-events:none;
+}
+.gc-play-badge span{
+  width:64px;height:64px;border-radius:50%;
+  background:rgba(255,255,255,.92);display:flex;align-items:center;justify-content:center;
+  box-shadow:0 8px 24px rgba(0,0,0,.28);transition:.25s;
+}
+.gc-play-badge span::after{
+  content:"";display:block;width:0;height:0;
+  border-left:18px solid var(--gc-red);border-top:11px solid transparent;border-bottom:11px solid transparent;
+  margin-left:5px;
+}
+.gc-hero-cover:hover .gc-play-badge span{transform:scale(1.08)}
+.gc-hero-float{
+  position:absolute;bottom:-22px;left:-18px;background:#fff;
+  border-radius:14px;padding:12px 16px;box-shadow:var(--gc-shadow);
+  display:flex;align-items:center;gap:11px;max-width:250px;
+}
+.gc-hero-float-dot{
+  width:38px;height:38px;border-radius:10px;flex:0 0 auto;
+  background:linear-gradient(135deg,#f4a261,#e63946);
+  display:flex;align-items:center;justify-content:center;color:#fff;font-size:15px;font-weight:800;
+}
+.gc-hero-float p{font-size:12px;color:var(--gc-ink-soft);line-height:1.5}
+.gc-hero-float strong{display:block;font-size:13.5px;color:var(--gc-ink)}
+
+/* 通用 section */
+.gc-section{padding:56px 0}
+.gc-section-head{margin-bottom:30px}
+.gc-section-head-flex{display:flex;align-items:flex-end;justify-content:space-between;gap:18px;flex-wrap:wrap}
+h2.gc-h2{
+  font-size:clamp(23px,2.6vw,30px);font-weight:900;letter-spacing:-.3px;
+  display:flex;align-items:center;gap:11px;
+}
+h2.gc-h2::before{
+  content:"";width:5px;height:26px;border-radius:4px;
+  background:linear-gradient(180deg,var(--gc-red),var(--gc-amber));
+}
+.gc-section-sub{font-size:14px;color:var(--gc-ink-soft);margin-top:7px;max-width:660px}
+.gc-section-link{font-size:13.5px;font-weight:600;color:var(--gc-red-deep);white-space:nowrap}
+.gc-section-link:hover{text-decoration:underline}
+
+/* 关键词解析 */
+.gc-about{background:var(--gc-cream);border-top:1px solid var(--gc-line);border-bottom:1px solid var(--gc-line)}
+.gc-about-inner{display:grid;grid-template-columns:1.6fr 1fr;gap:46px;align-items:start}
+.gc-about-text h3{font-size:19px;font-weight:800;margin:22px 0 10px}
+.gc-about-text h3:first-child{margin-top:0}
+.gc-about-text p{font-size:14.5px;color:var(--gc-ink-soft);margin-bottom:12px;text-align:justify}
+.gc-about-text p strong{color:var(--gc-ink);font-weight:700}
+.gc-about-side{display:flex;flex-direction:column;gap:14px}
+.gc-side-card{
+  background:#fff;border:1px solid var(--gc-line);border-radius:var(--gc-radius);
+  padding:18px 20px;
+}
+.gc-side-card h4{font-size:14px;font-weight:800;margin-bottom:9px;display:flex;align-items:center;gap:8px}
+.gc-side-card h4::before{content:"";width:6px;height:6px;border-radius:50%;background:var(--gc-red)}
+.gc-side-card p{font-size:13px;color:var(--gc-ink-soft)}
+.gc-tag-cloud{display:flex;flex-wrap:wrap;gap:8px;margin-top:4px}
+.gc-tag{
+  display:inline-block;font-size:12px;padding:3px 11px;border-radius:20px;
+  background:#f6efe7;color:var(--gc-red-deep);font-weight:600;transition:.2s;cursor:pointer;
+  border:1px solid transparent;
+}
+.gc-tag:hover{background:#fff;border-color:var(--gc-red)}
+
+/* 焦点视频 */
+.gc-focus-grid{display:grid;grid-template-columns:1.35fr 1fr;gap:22px}
+.gc-video-card{
+  background:#fff;border:1px solid var(--gc-line);border-radius:var(--gc-radius);
+  overflow:hidden;transition:.25s;display:flex;flex-direction:column;
+}
+.gc-video-card:hover{transform:translateY(-4px);box-shadow:var(--gc-shadow);border-color:#f0d9c8}
+.gc-video-cover{position:relative;background:#22223b;overflow:hidden}
+.gc-video-cover img{width:100%;aspect-ratio:16/9;object-fit:cover;transition:.4s}
+.gc-video-card:hover .gc-video-cover img{transform:scale(1.04)}
+.gc-video-cover-lg img{aspect-ratio:16/10}
+.gc-video-badge{
+  position:absolute;top:11px;left:11px;z-index:2;
+  background:rgba(230,57,70,.94);color:#fff;font-size:11.5px;font-weight:700;
+  padding:3px 10px;border-radius:20px;
+}
+.gc-video-time{
+  position:absolute;bottom:10px;right:10px;z-index:2;
+  background:rgba(20,20,28,.78);color:#fff;font-size:11.5px;
+  padding:2px 8px;border-radius:6px;
+}
+.gc-video-tri{
+  position:absolute;inset:0;display:flex;align-items:center;justify-content:center;z-index:1;
+}
+.gc-video-tri span{
+  width:46px;height:46px;border-radius:50%;background:rgba(255,255,255,.9);
+  display:flex;align-items:center;justify-content:center;opacity:0;transform:scale(.85);transition:.25s;
+}
+.gc-video-tri span::after{
+  content:"";border-left:13px solid var(--gc-red);border-top:8px solid transparent;border-bottom:8px solid transparent;margin-left:3px;
+}
+.gc-video-card:hover .gc-video-tri span{opacity:1;transform:scale(1)}
+.gc-video-body{padding:15px 17px 16px;display:flex;flex-direction:column;gap:8px;flex:1}
+.gc-video-title{font-size:15px;font-weight:800;line-height:1.5}
+.gc-video-card-lg .gc-video-title{font-size:18.5px}
+.gc-video-desc{font-size:12.8px;color:var(--gc-ink-soft);line-height:1.65}
+.gc-video-meta{display:flex;align-items:center;gap:9px;flex-wrap:wrap;font-size:12px;color:var(--gc-ink-soft);margin-top:auto;padding-top:6px}
+.gc-avatar{
+  width:24px;height:24px;border-radius:50%;flex:0 0 auto;
+  display:flex;align-items:center;justify-content:center;
+  font-size:11px;font-weight:800;color:#fff;
+}
+.gc-video-actions{display:flex;gap:8px;margin-left:auto}
+.gc-icon-btn{
+  display:inline-flex;align-items:center;gap:4px;font-size:12px;color:var(--gc-ink-soft);
+  padding:3px 8px;border-radius:8px;transition:.2s;
+}
+.gc-icon-btn:hover{background:#faf1e8;color:var(--gc-red-deep)}
+.gc-icon-btn.gc-liked{color:var(--gc-red);font-weight:700}
+.gc-icon-btn.gc-faved{color:#e08d1a;font-weight:700}
+.gc-focus-side{display:grid;grid-template-rows:repeat(2,1fr);gap:22px}
+
+/* 视频流 */
+.gc-stream-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.gc-stream-tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:22px}
+.gc-tab-btn{
+  padding:7px 16px;border-radius:22px;font-size:13.5px;font-weight:600;
+  background:#fff;border:1px solid var(--gc-line);color:var(--gc-ink-soft);transition:.2s;
+}
+.gc-tab-btn:hover{border-color:var(--gc-red);color:var(--gc-red-deep)}
+.gc-tab-btn.gc-tab-on{background:var(--gc-red);color:#fff;border-color:var(--gc-red)}
+.gc-stream-card{display:none}
+.gc-stream-card.gc-show{display:flex;animation:gcFade .35s ease}
+@keyframes gcFade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+
+/* 专题 */
+.gc-topic-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.gc-topic-card{
+  position:relative;border-radius:var(--gc-radius);overflow:hidden;min-height:220px;
+  display:flex;flex-direction:column;justify-content:flex-end;padding:20px;color:#fff;
+  transition:.28s;
+}
+.gc-topic-card:hover{transform:translateY(-4px);box-shadow:var(--gc-shadow)}
+.gc-topic-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+.gc-topic-card::after{
+  content:"";position:absolute;inset:0;z-index:1;
+  background:linear-gradient(180deg,rgba(20,20,28,.06) 25%,rgba(20,20,28,.86) 100%);
+}
+.gc-topic-card>*{position:relative;z-index:2}
+.gc-topic-tag{font-size:11.5px;font-weight:700;background:rgba(255,255,255,.22);padding:2px 10px;border-radius:20px;align-self:flex-start;margin-bottom:9px}
+.gc-topic-card h3{font-size:16.5px;font-weight:800;margin-bottom:6px;line-height:1.4}
+.gc-topic-card p{font-size:12.5px;opacity:.86;line-height:1.6}
+.gc-topic-state{font-size:11.5px;margin-top:9px;color:#ffd9a8;font-weight:600}
+
+/* 创作者 */
+.gc-creator-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.gc-creator-card{
+  background:#fff;border:1px solid var(--gc-line);border-radius:var(--gc-radius);
+  padding:22px 18px;text-align:center;transition:.25s;cursor:pointer;
+}
+.gc-creator-card:hover{transform:translateY(-4px);box-shadow:var(--gc-shadow);border-color:#f0d9c8}
+.gc-creator-avatar{
+  width:62px;height:62px;border-radius:50%;margin:0 auto 12px;
+  display:flex;align-items:center;justify-content:center;
+  font-size:22px;font-weight:900;color:#fff;
+}
+.gc-creator-name{font-size:15.5px;font-weight:800;margin-bottom:4px}
+.gc-creator-field{font-size:12px;color:var(--gc-red-deep);font-weight:600;margin-bottom:9px}
+.gc-creator-bio{font-size:12.3px;color:var(--gc-ink-soft);line-height:1.65;min-height:60px}
+.gc-creator-nums{display:flex;justify-content:center;gap:18px;margin-top:12px;padding-top:12px;border-top:1px dashed var(--gc-line)}
+.gc-creator-nums b{display:block;font-size:14px;color:var(--gc-ink)}
+.gc-creator-nums span{font-size:11px;color:var(--gc-ink-soft)}
+
+/* 故事随笔 */
+.gc-story-wrap{background:#22223b;color:#fff}
+.gc-story-wrap .gc-h2{color:#fff}
+.gc-story-wrap .gc-section-sub{color:rgba(255,255,255,.66)}
+.gc-story-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.gc-story-card{
+  background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);
+  border-radius:var(--gc-radius);padding:22px;transition:.25s;
+}
+.gc-story-card:hover{background:rgba(255,255,255,.1);transform:translateY(-3px)}
+.gc-story-card h3{font-size:16px;font-weight:800;margin-bottom:9px;line-height:1.5}
+.gc-story-card p{font-size:13px;color:rgba(255,255,255,.72);line-height:1.75;text-align:justify}
+.gc-story-author{display:flex;align-items:center;gap:8px;margin-top:15px;font-size:12px;color:rgba(255,255,255,.6)}
+
+/* 作品墙 */
+.gc-wall{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:150px;gap:14px}
+.gc-wall-item{
+  position:relative;border-radius:12px;overflow:hidden;background:#22223b;
+  transition:.28s;cursor:pointer;
+}
+.gc-wall-item:hover{transform:scale(1.02);box-shadow:var(--gc-shadow)}
+.gc-wall-item img{width:100%;height:100%;object-fit:cover}
+.gc-wall-item span{
+  position:absolute;left:0;right:0;bottom:0;padding:22px 12px 10px;
+  font-size:12px;color:#fff;font-weight:600;
+  background:linear-gradient(transparent,rgba(20,20,28,.85));
+}
+.gc-wall-big{grid-column:span 2;grid-row:span 2}
+.gc-wall-wide{grid-column:span 2}
+
+/* 评价 */
+.gc-review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.gc-review-card{
+  background:var(--gc-cream);border:1px solid var(--gc-line);border-radius:var(--gc-radius);
+  padding:20px;position:relative;
+}
+.gc-review-card::before{
+  content:"“";position:absolute;top:6px;right:18px;font-size:52px;
+  color:rgba(230,57,70,.14);font-family:Georgia,serif;line-height:1;
+}
+.gc-review-card h4{font-size:14px;font-weight:800;margin-bottom:8px}
+.gc-review-card p{font-size:13px;color:var(--gc-ink-soft);line-height:1.7;position:relative;z-index:1}
+.gc-review-user{display:flex;align-items:center;gap:9px;margin-top:14px;font-size:12.5px;color:var(--gc-ink-soft)}
+.gc-review-stars{color:#f0a83b;letter-spacing:1px;font-size:12px;margin-top:6px}
+
+/* 动态 */
+.gc-news-list{display:flex;flex-direction:column;gap:2px}
+.gc-news-item{
+  display:grid;grid-template-columns:96px 1fr auto;gap:18px;align-items:center;
+  padding:16px 4px;border-bottom:1px dashed var(--gc-line);transition:.2s;
+}
+.gc-news-item:hover{background:#fff;border-radius:10px;padding-left:14px}
+.gc-news-date{font-size:12.5px;color:var(--gc-ink-soft);font-weight:600}
+.gc-news-title{font-size:14.5px;font-weight:700}
+.gc-news-title small{display:block;font-size:12.3px;color:var(--gc-ink-soft);font-weight:500;margin-top:3px}
+.gc-news-type{
+  font-size:11.5px;font-weight:700;color:var(--gc-red-deep);
+  background:#fbe9e5;padding:2px 10px;border-radius:20px;white-space:nowrap;
+}
+
+/* FAQ */
+.gc-faq{max-width:820px}
+.gc-faq details{
+  background:#fff;border:1px solid var(--gc-line);border-radius:11px;
+  margin-bottom:11px;overflow:hidden;transition:.2s;
+}
+.gc-faq details[open]{border-color:#f0c9b3;box-shadow:0 4px 16px rgba(34,34,59,.06)}
+.gc-faq summary{
+  list-style:none;cursor:pointer;padding:14px 18px;font-size:14.5px;font-weight:700;
+  display:flex;justify-content:space-between;align-items:center;gap:14px;
+}
+.gc-faq summary::-webkit-details-marker{display:none}
+.gc-faq summary::after{
+  content:"+";font-size:19px;color:var(--gc-red);font-weight:400;transition:.2s;flex:0 0 auto;
+}
+.gc-faq details[open] summary::after{content:"−"}
+.gc-faq details p{font-size:13.3px;color:var(--gc-ink-soft);padding:0 18px 15px;line-height:1.75}
+
+/* 联系投稿 */
+.gc-contact-wrap{
+  background:linear-gradient(120deg,#22223b,#3a2a30);
+  border-radius:22px;padding:42px 40px;color:#fff;
+  display:grid;grid-template-columns:1.2fr 1fr;gap:36px;align-items:center;
+}
+.gc-contact-wrap h2{color:#fff;margin-bottom:12px}
+.gc-contact-wrap .gc-h2::before{background:linear-gradient(180deg,#f4a261,#e63946)}
+.gc-contact-wrap p{font-size:13.8px;color:rgba(255,255,255,.75);line-height:1.8;margin-bottom:16px}
+.gc-contact-actions{display:flex;gap:12px;flex-wrap:wrap}
+.gc-contact-actions .gc-btn-primary{background:var(--gc-amber);color:#22223b}
+.gc-contact-actions .gc-btn-primary:hover{background:#f7b878}
+.gc-contact-actions .gc-btn-ghost{background:transparent;color:#fff;border-color:rgba(255,255,255,.35)}
+.gc-contact-actions .gc-btn-ghost:hover{border-color:#fff;color:#fff}
+.gc-contact-info{background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:14px;padding:20px 22px}
+.gc-contact-info li{display:flex;justify-content:space-between;gap:12px;font-size:13px;padding:8px 0;border-bottom:1px dashed rgba(255,255,255,.14)}
+.gc-contact-info li:last-child{border-bottom:none}
+.gc-contact-info b{color:rgba(255,255,255,.6);font-weight:500}
+
+/* 页脚 */
+.gc-footer{background:#191921;color:rgba(255,255,255,.62);padding:44px 0 26px;font-size:13px}
+.gc-footer-top{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:32px;padding-bottom:28px;border-bottom:1px solid rgba(255,255,255,.1)}
+.gc-footer-brand{display:flex;align-items:center;gap:10px;margin-bottom:12px}
+.gc-footer-brand span{font-size:17px;font-weight:800;color:#fff}
+.gc-footer p{line-height:1.8;font-size:12.5px}
+.gc-footer h5{color:#fff;font-size:13.5px;font-weight:700;margin-bottom:12px}
+.gc-footer li{margin-bottom:7px;font-size:12.5px}
+.gc-footer a:hover{color:var(--gc-amber)}
+.gc-footer-bottom{padding-top:20px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:12px;color:rgba(255,255,255,.45)}
+
+/* 回到顶部 */
+.gc-top-btn{
+  position:fixed;right:24px;bottom:28px;width:46px;height:46px;border-radius:13px;
+  background:var(--gc-red);color:#fff;font-size:19px;display:flex;align-items:center;justify-content:center;
+  box-shadow:0 8px 22px rgba(230,57,70,.4);opacity:0;pointer-events:none;transform:translateY(12px);
+  transition:.28s;z-index:70;
+}
+.gc-top-btn.gc-top-show{opacity:1;pointer-events:auto;transform:none}
+.gc-top-btn:hover{background:var(--gc-red-deep)}
+
+/* toast */
+.gc-toast{
+  position:fixed;left:50%;bottom:36px;transform:translate(-50%,20px);
+  background:#22223b;color:#fff;font-size:13.5px;padding:11px 22px;border-radius:11px;
+  box-shadow:0 10px 30px rgba(0,0,0,.28);opacity:0;pointer-events:none;transition:.28s;z-index:99;
+}
+.gc-toast.gc-toast-show{opacity:1;transform:translate(-50%,0)}
+
+/* 弹窗 */
+.gc-modal-mask{
+  position:fixed;inset:0;background:rgba(20,20,28,.62);z-index:120;
+  display:flex;align-items:center;justify-content:center;padding:22px;
+  opacity:0;pointer-events:none;transition:.25s;
+}
+.gc-modal-mask.gc-modal-open{opacity:1;pointer-events:auto}
+.gc-modal{
+  background:#fff;border-radius:18px;max-width:470px;width:100%;padding:28px;
+  transform:translateY(14px);transition:.25s;max-height:86vh;overflow:auto;
+}
+.gc-modal-mask.gc-modal-open .gc-modal{transform:none}
+.gc-modal h3{font-size:19px;font-weight:800;margin-bottom:8px}
+.gc-modal p{font-size:13.5px;color:var(--gc-ink-soft);line-height:1.8;margin-bottom:16px}
+.gc-modal label{display:block;font-size:12.5px;font-weight:700;margin-bottom:6px}
+.gc-modal input,.gc-modal textarea,.gc-modal select{
+  width:100%;border:1px solid var(--gc-line);border-radius:10px;padding:9px 12px;
+  font-size:13.5px;font-family:inherit;margin-bottom:13px;outline:none;background:#faf8f4;
+}
+.gc-modal input:focus,.gc-modal textarea:focus,.gc-modal select:focus{border-color:var(--gc-red);background:#fff}
+.gc-modal textarea{resize:vertical;min-height:84px}
+.gc-modal-actions{display:flex;gap:10px;justify-content:flex-end;margin-top:6px}
+.gc-modal-close{position:absolute;top:14px;right:16px;font-size:22px;color:var(--gc-ink-soft)}
+.gc-modal-wrap{position:relative}
+.gc-share-row{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:16px}
+.gc-share-row button{
+  flex:1;min-width:90px;padding:10px;border-radius:10px;background:#f5efe7;font-size:13px;font-weight:600;
+  transition:.2s;
+}
+.gc-share-row button:hover{background:var(--gc-red);color:#fff}
+
+/* 浮动动画 */
+.gc-reveal{opacity:0;transform:translateY(16px);transition:opacity .6s ease,transform .6s ease}
+.gc-reveal.gc-reveal-in{opacity:1;transform:none}
+
+/* 响应式 */
+@media(max-width:980px){
+  .gc-hero-grid{grid-template-columns:1fr;gap:34px}
+  .gc-about-inner{grid-template-columns:1fr;gap:28px}
+  .gc-focus-grid{grid-template-columns:1fr}
+  .gc-stream-grid{grid-template-columns:repeat(2,1fr)}
+  .gc-topic-grid{grid-template-columns:repeat(2,1fr)}
+  .gc-creator-grid{grid-template-columns:repeat(2,1fr)}
+  .gc-story-grid{grid-template-columns:1fr}
+  .gc-review-grid{grid-template-columns:repeat(2,1fr)}
+  .gc-contact-wrap{grid-template-columns:1fr;padding:32px 26px}
+  .gc-footer-top{grid-template-columns:1fr 1fr}
+}
+@media(max-width:760px){
+  .gc-nav{
+    position:absolute;top:100%;left:0;right:0;background:#fffdf9;
+    flex-direction:column;padding:10px 16px 16px;gap:2px;
+    border-bottom:1px solid var(--gc-line);box-shadow:0 14px 26px rgba(34,34,59,.1);
+    display:none;
+  }
+  .gc-nav.gc-nav-open{display:flex}
+  .gc-burger{display:flex}
+  .gc-header-inner{gap:12px;height:62px}
+  .gc-search input{width:96px}
+  .gc-header-actions .gc-btn{padding:7px 12px;font-size:13px}
+  .gc-stream-grid,.gc-review-grid{grid-template-columns:1fr}
+  .gc-topic-grid{grid-template-columns:1fr}
+  .gc-creator-grid{grid-template-columns:1fr 1fr;gap:14px}
+  .gc-wall{grid-template-columns:repeat(2,1fr);grid-auto-rows:128px}
+  .gc-wall-big{grid-column:span 2;grid-row:span 1}
+  .gc-wall-wide{grid-column:span 2}
+  .gc-news-item{grid-template-columns:1fr;gap:5px}
+  .gc-stats{gap:22px}
+  .gc-section{padding:40px 0}
+  .gc-hero{padding:36px 0 34px}
+  .gc-footer-top{grid-template-columns:1fr}
+}
+</style>
+<script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+</head>
+<body>
+
+<div class="gc-sticky-wrap">
+  <div class="gc-notice-bar" aria-label="站内公告">
+    <div class="gc-notice-inner">
+      <span class="gc-notice-tag">新增</span>
+      <div class="gc-notice-track">
+        <span>「城市暗线」专题第二季 5 期新片已上线，聚焦街巷里的真实个体</span>
+        <span>创作者扶持计划 2026 冬季批次开放报名，投稿通道同步开启</span>
+        <span>内容标签体系升级，新增「现场」「旁证」「回声」三类分类</span>
+        <span>「城市暗线」专题第二季 5 期新片已上线，聚焦街巷里的真实个体</span>
+        <span>创作者扶持计划 2026 冬季批次开放报名，投稿通道同步开启</span>
+        <span>内容标签体系升级，新增「现场」「旁证」「回声」三类分类</span>
+      </div>
+    </div>
+  </div>
+
+  <header class="gc-header">
+    <div class="gc-header-inner">
+      <a href="#gc-top" class="gc-logo" aria-label="911吃瓜爆料网首页">
+        <span class="gc-logo-mark">911</span>
+        <span class="gc-logo-text">吃瓜爆料网<small>BRAND · OFFICIAL</small></span>
+      </a>
+      <nav class="gc-nav" id="gcNav" aria-label="主导航">
+        <a href="#gc-top" class="gc-nav-active">首页</a>
+        <a href="#gc-focus">焦点视频</a>
+        <a href="#gc-stream">热门内容</a>
+        <a href="#gc-topic">专题企划</a>
+        <a href="#gc-creator">创作者</a>
+        <a href="#gc-news">企业动态</a>
+        <a href="#gc-faq">帮助中心</a>
+        <a href="#gc-contact">联系我们</a>
+      </nav>
+      <div class="gc-header-actions">
+        <div class="gc-search">
+          <input type="search" id="gcSearchInput" placeholder="搜索话题 / 创作者" aria-label="站内搜索">
+          <button class="gc-icon-btn" id="gcSearchBtn" aria-label="执行搜索">🔍</button>
+        </div>
+        <button class="gc-btn gc-btn-primary" data-open-modal="gcSubmitModal">投稿入口</button>
+        <button class="gc-burger" id="gcBurger" aria-label="展开导航" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+</div>
+
+<main id="gc-top">
+
+  <!-- 首屏 -->
+  <section class="gc-hero">
+    <div class="gc-container">
+      <div class="gc-hero-grid">
+        <div>
+          <span class="gc-hero-kicker">官方网站 · 品牌自营内容门户</span>
+          <h1 class="gc-h1"><em>911吃瓜爆料网</em><br>把每一次围观，变成有据可循的影像</h1>
+          <p class="gc-hero-lead">
+            作为持续运营的视频品牌平台，<strong>911吃瓜爆料网</strong>深耕热点记录与社区表达这一垂直领域，
+            以正版、高清、专业的内容标准，连接创作者、当事人与围观的你，构建一个值得信赖、用户至上的内容生态。
+          </p>
+          <div class="gc-hero-cta">
+            <a href="#gc-focus" class="gc-btn gc-btn-primary">查看焦点内容</a>
+            <a href="#gc-creator" class="gc-btn gc-btn-ghost">认识创作者</a>
+            <button class="gc-btn gc-btn-ghost" data-open-modal="gcSubmitModal">我要投稿</button>
+          </div>
+          <div class="gc-stats">
+            <div>
+              <div class="gc-stat-num" data-count="128600">128,600</div>
+              <div class="gc-stat-label">原创影像作品（条）</div>
+            </div>
+            <div>
+              <div class="gc-stat-num" data-count="2140">2,140</div>
+              <div class="gc-stat-label">签约与入驻创作者</div>
+            </div>
+            <div>
+              <div class="gc-stat-num" data-count="97">97%</div>
+              <div class="gc-stat-label">内容核验通过率</div>
+            </div>
+          </div>
+        </div>
+        <div class="gc-hero-visual">
+          <div class="gc-hero-cover">
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 550'%3E%3Cdefs%3E%3ClinearGradient id='bg' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%2322223b'/%3E%3Cstop offset='1' stop-color='%234a2b34'/%3E%3C/linearGradient%3E%3ClinearGradient id='warm' x1='0' y1='1' x2='1' y2='0'%3E%3Cstop offset='0' stop-color='%23e63946'/%3E%3Cstop offset='1' stop-color='%23f4a261'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='550' fill='url(%23bg)'/%3E%3Ccircle cx='640' cy='110' r='150' fill='%23f4a261' opacity='0.16'/%3E%3Ccircle cx='140' cy='470' r='190' fill='%23e63946' opacity='0.15'/%3E%3Cg stroke='%23ffffff' stroke-opacity='0.16' stroke-width='2'%3E%3Cpath d='M0 400 L800 250'/%3E%3Cpath d='M0 470 L800 330'/%3E%3C/g%3E%3Cg fill='%23ffffff'%3E%3Crect x='96' y='120' width='210' height='16' rx='8' opacity='0.9'/%3E%3Crect x='96' y='152' width='150' height='12' rx='6' opacity='0.55'/%3E%3Crect x='96' y='178' width='176' height='12' rx='6' opacity='0.4'/%3E%3C/g%3E%3Cg transform='translate(96,232)'%3E%3Crect width='120' height='38' rx='19' fill='url(%23warm)'/%3E%3Ctext x='60' y='25' font-size='16' fill='%23fff' text-anchor='middle' font-family='sans-serif' font-weight='bold'%3E现场直击%3C/text%3E%3C/g%3E%3Cg transform='translate(430,300)'%3E%3Crect width='290' height='170' rx='16' fill='%23ffffff' opacity='0.1'/%3E%3Crect x='20' y='22' width='170' height='12' rx='6' fill='%23ffffff' opacity='0.75'/%3E%3Crect x='20' y='50' width='250' height='9' rx='5' fill='%23ffffff' opacity='0.38'/%3E%3Crect x='20' y='70' width='220' height='9' rx='5' fill='%23ffffff' opacity='0.3'/%3E%3Crect x='20' y='96' width='90' height='28' rx='14' fill='%23e63946'/%3E%3C/g%3E%3Cg stroke='%23f4a261' stroke-width='3' fill='none' opacity='0.8'%3E%3Ccircle cx='660' cy='420' r='58'/%3E%3Ccircle cx='660' cy='420' r='86' stroke-opacity='0.35'/%3E%3C/g%3E%3C/svg%3E" alt="911吃瓜爆料网品牌主视觉：深色现场画面与红色信息标签" width="800" height="550">
+            <div class="gc-play-badge" aria-hidden="true"><span></span></div>
+          </div>
+          <div class="gc-hero-float">
+            <div class="gc-hero-float-dot">热</div>
+            <p><strong>今日核验 46 条现场素材</strong>编辑团队 24 小时内完成来源标注</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 关键词解析 -->
+  <section class="gc-section gc-about" id="gc-about">
+    <div class="gc-container">
+      <div class="gc-section-head">
+        <h2 class="gc-h2">关于 911吃瓜爆料网 · 品牌定位与内容解析</h2>
+        <p class="gc-section-sub">一个以「记录、核验、讨论」为核心方法的视频内容品牌，我们相信围观也可以有分寸、有出处、有温度。</p>
+      </div>
+      <div class="gc-about-inner">
+        <div class="gc-about-text">
+          <h3>官方定位：不止于热闹的视频品牌平台</h3>
+          <p>
+            <strong>911吃瓜爆料网</strong>是一个以热点记录与社区讨论为核心的视频品牌官方网站。我们不把自己定义为简单的信息搬运者，而是一个持续运营的内容生态：每一条被推送的内容，都需要经过选题评估、素材溯源、画面核验与编辑注释四道流程。平台以<strong>原创、正版、高清</strong>为基本底线，以专业和匠心对待每一段素材，让"吃瓜"这件事不再只有情绪，还有背景、有脉络、有可追溯的线索。
+          </p>
+          <h3>内容方法：从现场到回声的完整链路</h3>
+          <p>
+            我们把一条内容拆成三个阶段——<strong>现场</strong>，即第一时间进入事件发生地的影像记录；<strong>旁证</strong>，即多方来源的交叉验证与背景补充；<strong>回声</strong>，即社区讨论、当事人回应与后续追踪。这套方法让内容从"三秒钟的刺激"走向"三十分钟的理解"。平台设有专门的核验小组，对涉及公共事件、人物权益与商业信息的素材执行更严格的审核标准，对无法确认来源的内容一律标注"待核验"，绝不冒充确凿事实。
+          </p>
+          <h3>创作者生态：让认真记录的人被看见</h3>
+          <p>
+            截至目前，已有超过两千位创作者在 911吃瓜爆料网 持续发布作品，覆盖城市探索、人物访谈、行业观察、创作幕后、情感故事与知识科普等多个方向。平台通过创作扶持计划、素材共享库、剪辑工具包与流量分成机制，帮助独立创作者把兴趣变成可持续的职业路径。我们鼓励<strong>真实、温暖、有力量</strong>的表达，也包容不同的立场与视角——只要守住事实底线与对他人的基本尊重。
+          </p>
+          <h3>社区氛围：用户至上的长期主义</h3>
+          <p>
+            社区是 911吃瓜爆料网 的另一半。评论区不是情绪的垃圾场，而是观点交换的公共空间。我们上线了"先看背景再发言"的提示卡、争议话题的双栏对照视图、以及针对不友善表达的温和提醒机制。我们希望每一个来到这里的人，都能在热闹之外得到一点秩序感。品牌成立至今，平台始终坚持不售卖热搜位、不制造对立话题、不用标题党换取点击，这些原则构成了我们<strong>值得信赖</strong>的口碑基础。
+          </p>
+          <h3>技术与社会责任：让内容更有分量</h3>
+          <p>
+            在技术层面，平台自研了视频指纹比对与素材溯源工具，能够在投稿阶段识别重复搬运与二次剪辑痕迹，辅助编辑判断素材的原始出处。在社会责任层面，我们对涉及未成年人、隐私信息与突发事件当事人的内容执行更谨慎的呈现方式，必要时进行画面模糊与信息脱敏。我们相信，一家视频企业的<strong>影响力</strong>越大，越应该主动承担更重的<strong>社会责任</strong>。
+          </p>
+          <h3>未来方向：垂直领域的深度而非广度</h3>
+          <p>
+            <strong>911吃瓜爆料网</strong>不追求内容品类的无限扩张，而是希望在"热点记录与公共讨论"这一垂直领域做深做透。2026 年，平台将重点投入三个方向：区域创作者驻站计划、事实核验公开课、以及面向高校的影像叙事工作坊。我们希望通过这些长期投入，让更多人学会拍摄、学会提问、学会判断，也学会在围观中保持善意。这是品牌的使命，也是我们与用户之间最朴素的约定。
+          </p>
+        </div>
+        <aside class="gc-about-side">
+          <div class="gc-side-card">
+            <h4>品牌速览</h4>
+            <p>成立时间：2019 年<br>品牌属性：视频内容平台<br>核心理念：记录 · 核验 · 讨论<br>内容标准：原创、正版、高清</p>
+          </div>
+          <div class="gc-side-card">
+            <h4>热门话题标签</h4>
+            <div class="gc-tag-cloud" id="gcTagCloud">
+              <span class="gc-tag">城市暗线</span>
+              <span class="gc-tag">现场记录</span>
+              <span class="gc-tag">人物访谈</span>
+              <span class="gc-tag">行业观察</span>
+              <span class="gc-tag">创作幕后</span>
+              <span class="gc-tag">治愈影像</span>
+              <span class="gc-tag">街巷故事</span>
+              <span class="gc-tag">事实核验</span>
+            </div>
+          </div>
+          <div class="gc-side-card">
+            <h4>内容守则</h4>
+            <p>不传播未经核实的指控，不曝光无关第三人信息，不渲染对立情绪。每一条爆料，都应经得起一句追问：依据是什么？</p>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- 焦点视频 -->
+  <section class="gc-section" id="gc-focus">
+    <div class="gc-container">
+      <div class="gc-section-head gc-section-head-flex">
+        <div>
+          <h2 class="gc-h2">焦点视频</h2>
+          <p class="gc-section-sub">编辑团队本周精选，兼顾现场感与信息密度的高清原创内容。</p>
+        </div>
+        <a href="#gc-stream" class="gc-section-link">查看全部内容 →</a>
+      </div>
+      <div class="gc-focus-grid">
+        <article class="gc-video-card gc-video-card-lg">
+          <div class="gc-video-cover gc-video-cover-lg">
+            <span class="gc-video-badge">本周焦点</span>
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 500'%3E%3Cdefs%3E%3ClinearGradient id='a' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23e63946'/%3E%3Cstop offset='.55' stop-color='%2322223b'/%3E%3Cstop offset='1' stop-color='%230f1020'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='800' height='500' fill='url(%23a)'/%3E%3Cg fill='%23ffffff' opacity='0.1'%3E%3Ccircle cx='600' cy='120' r='180'/%3E%3Ccircle cx='160' cy='400' r='140'/%3E%3C/g%3E%3Cg stroke='%23f4a261' stroke-width='4' fill='none'%3E%3Cpath d='M120 380 L260 240 L360 320 L520 150 L680 250'/%3E%3C/g%3E%3Cg fill='%23f4a261'%3E%3Ccircle cx='260' cy='240' r='9'/%3E%3Ccircle cx='520' cy='150' r='9'/%3E%3C/g%3E%3Cg fill='%23ffffff'%3E%3Crect x='80' y='80' width='260' height='18' rx='9'/%3E%3Crect x='80' y='114' width='170' height='12' rx='6' opacity='0.6'/%3E%3C/g%3E%3Cg transform='translate(80,420)'%3E%3Crect width='150' height='36' rx='18' fill='%23ffffff' opacity='0.16'/%3E%3Ctext x='75' y='24' font-size='15' fill='%23fff' text-anchor='middle' font-family='sans-serif'%3E48 小时追踪%3C/text%3E%3C/g%3E%3C/svg%3E" alt="焦点视频封面：城市暗线专题中的街巷追踪路线示意图" width="800" height="500">
+            <div class="gc-video-tri" aria-hidden="true"><span></span></div>
+            <span class="gc-video-time">18:42</span>
+          </div>
+          <div class="gc-video-body">
+            <h3 class="gc-video-title">48 小时追踪：一条老街的搬迁公告，是如何被误读的</h3>
+            <p class="gc-video-desc">从张贴公告到居民会议，我们完整记录了三个信息节点，并邀请社区工作者逐条解释时间线与执行流程。</p>
+            <div class="gc-video-meta">
+              <span class="gc-avatar" style="background:#e63946">徐</span>
+              <span>徐闻野</span>
+              <span>· 3.2 万次观看</span>
+              <div class="gc-video-actions">
+                <button class="gc-icon-btn gc-like-btn" data-base="3208">👍 3208</button>
+                <button class="gc-icon-btn gc-fav-btn">☆ 收藏</button>
+              </div>
+            </div>
+          </div>
+        </article>
+        <div class="gc-focus-side">
+          <article class="gc-video-card">
+            <div class="gc-video-cover">
+              <span class="gc-video-badge">人物访谈</span>
+              <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23f4a261'/%3E%3Ccircle cx='500' cy='90' r='120' fill='%23e63946' opacity='0.35'/%3E%3Ccircle cx='120' cy='290' r='100' fill='%2322223b' opacity='0.4'/%3E%3Cg fill='%23ffffff'%3E%3Ccircle cx='320' cy='140' r='48' opacity='0.92'/%3E%3Cpath d='M240 300c0-44 36-78 80-78s80 34 80 78z' opacity='0.92'/%3E%3C/g%3E%3Cg fill='%2322223b'%3E%3Crect x='40' y='40' width='140' height='14' rx='7' opacity='0.55'/%3E%3Crect x='40' y='66' width='96' height='10' rx='5' opacity='0.4'/%3E%3C/g%3E%3C/svg%3E" alt="人物访谈封面：暖橙背景中的讲述者剪影" width="640" height="360">
+              <span class="gc-video-time">12:08</span>
+            </div>
+            <div class="gc-video-body">
+              <h3 class="gc-video-title">她说她想把每一场纠纷都拍成纪录片</h3>
+              <div class="gc-video-meta">
+                <span class="gc-avatar" style="background:#22223b">林</span>
+                <span>林砚秋</span>
+                <span>· 1.8 万次观看</span>
+                <div class="gc-video-actions">
+                  <button class="gc-icon-btn gc-like-btn" data-base="1544">👍 1544</button>
+                  <button class="gc-icon-btn gc-fav-btn">☆ 收藏</button>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article class="gc-video-card">
+            <div class="gc-video-cover">
+              <span class="gc-video-badge">知识科普</span>
+              <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%2322223b'/%3E%3Cg stroke='%23f4a261' stroke-width='2' opacity='0.6'%3E%3Cpath d='M60 300 L180 180 L300 240 L420 120 L580 200'/%3E%3Cpath d='M60 320 L180 220 L300 280 L420 160 L580 240'/%3E%3C/g%3E%3Cg fill='%23e63946'%3E%3Ccircle cx='180' cy='180' r='8'/%3E%3Ccircle cx='420' cy='120' r='8'/%3E%3C/g%3E%3Cg fill='%23ffffff'%3E%3Crect x='46' y='44' width='200' height='15' rx='7' opacity='0.9'/%3E%3Crect x='46' y='72' width='130' height='10' rx='5' opacity='0.45'/%3E%3C/g%3E%3C/svg%3E" alt="知识科普封面：深色背景中的数据走势与节点标注" width="640" height="360">
+              <span class="gc-video-time">09:35</span>
+            </div>
+            <div class="gc-video-body">
+              <h3 class="gc-video-title">怎么看穿一条拼接过的爆料视频？三分钟学会比对</h3>
+              <div class="gc-video-meta">
+                <span class="gc-avatar" style="background:#2a9d8f">吴</span>
+                <span>吴知言</span>
+                <span>· 2.6 万次观看</span>
+                <div class="gc-video-actions">
+                  <button class="gc-icon-btn gc-like-btn" data-base="2410">👍 2410</button>
+                  <button class="gc-icon-btn gc-fav-btn">☆ 收藏</button>
+                </div>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 热门视频流 -->
+  <section class="gc-section" id="gc-stream">
+    <div class="gc-container">
+      <div class="gc-section-head">
+        <h2 class="gc-h2">热门内容</h2>
+        <p class="gc-section-sub">按主题筛选，找到你关心的那一段现场。点选标签即可切换。</p>
+      </div>
+      <div class="gc-stream-tabs" id="gcStreamTabs">
+        <button class="gc-tab-btn gc-tab-on" data-filter="all">全部</button>
+        <button class="gc-tab-btn" data-filter="scene">现场</button>
+        <button class="gc-tab-btn" data-filter="talk">访谈</button>
+        <button class="gc-tab-btn" data-filter="craft">幕后</button>
+        <button class="gc-tab-btn" data-filter="life">生活</button>
+      </div>
+      <div class="gc-stream-grid">
+
+        <article class="gc-video-card gc-stream-card gc-show" data-cat="scene">
+          <div class="gc-video-cover">
+            <span class="gc-video-badge">现场</span>
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23b81f2c'/%3E%3Cg fill='%23ffffff' opacity='0.12'%3E%3Crect x='0' y='240' width='640' height='120'/%3E%3Crect x='0' y='200' width='640' height='6'/%3E%3C/g%3E%3Cg fill='%2322223b'%3E%3Crect x='70' y='150' width='90' height='110'/%3E%3Crect x='190' y='120' width='110' height='140'/%3E%3Crect x='330' y='170' width='80' height='90'/%3E%3Crect x='440' y='130' width='130' height='130'/%3E%3C/g%3E%3Cg fill='%23f4a261'%3E%3Crect x='86' y='170' width='16' height='16'/%3E%3Crect x='212' y='146' width='16' height='16'/%3E%3Crect x='348' y='192' width='16' height='16'/%3E%3Crect x='470' y='156' width='16' height='16'/%3E%3C/g%3E%3C/svg%3E" alt="现场视频封面：红色调街区建筑立面的剪辑画面" width="640" height="360">
+            <span class="gc-video-time">07:21</span>
+          </div>
+          <div class="gc-video-body">
+            <h3 class="gc-video-title">凌晨四点的批发市场：谁在决定今天的水果价格</h3>
+            <p class="gc-video-desc">我们跟着三位摊主走完一整个进货流程，记录价格从产地到摊位的每一次加价。</p>
+            <div class="gc-video-meta">
+              <span class="gc-avatar" style="background:#b81f2c">何</span>
+              <span>何满仓</span>
+              <span>· 5.1 万</span>
+              <div class="gc-video-actions">
+                <button class="gc-icon-btn gc-like-btn" data-base="4820">👍 4820</button>
+                <button class="gc-icon-btn gc-fav-btn">☆ 收藏</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="gc-video-card gc-stream-card gc-show" data-cat="talk">
+          <div class="gc-video-cover">
+            <span class="gc-video-badge">访谈</span>
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%232a9d8f'/%3E%3Ccircle cx='180' cy='180' r='110' fill='%23ffffff' opacity='0.14'/%3E%3Ccircle cx='460' cy='180' r='110' fill='%2322223b' opacity='0.22'/%3E%3Cg fill='%23ffffff'%3E%3Crect x='250' y='110' width='140' height='14' rx='7'/%3E%3Crect x='270' y='140' width='100' height='10' rx='5' opacity='0.6'/%3E%3C/g%3E%3Cg fill='%2322223b' opacity='0.8'%3E%3Ccircle cx='320' cy='220' r='30'/%3E%3Crect x='286' y='256' width='68' height='52' rx='22'/%3E%3C/g%3E%3C/svg%3E" alt="访谈视频封面：青绿底色中的对话双方抽象图形" width="640" height="360">
+            <span class="gc-video-time">21:14</span>
+          </div>
+          <div class="gc-video-body">
+            <h3 class="gc-video-title">对话社区调解员：十一年里，我劝住过三百场争吵</h3>
+            <p class="gc-video-desc">他不接受镜头跟拍工作现场，但愿意坐下来谈谈那些没能劝住的事。</p>
+            <div class="gc-video-meta">
+              <span class="gc-avatar" style="background:#2a9d8f">周</span>
+              <span>周定一</span>
+              <span>· 4.4 万</span>
+              <div class="gc-video-actions">
+                <button class="gc-icon-btn gc-like-btn" data-base="3907">👍 3907</button>
+                <button class="gc-icon-btn gc-fav-btn">☆ 收藏</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="gc-video-card gc-stream-card gc-show" data-cat="craft">
+          <div class="gc-video-cover">
+            <span class="gc-video-badge">幕后</span>
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%231b1b1f'/%3E%3Cg stroke='%23f4a261' stroke-width='3' fill='none'%3E%3Crect x='120' y='90' width='400' height='180' rx='10'/%3E%3Cpath d='M120 210 L300 150 L300 270'/%3E%3Cpath d='M520 90 L420 160 L420 240'/%3E%3C/g%3E%3Cg fill='%23e63946'%3E%3Ccircle cx='120' cy='90' r='10'/%3E%3Ccircle cx='520' cy='270' r='10'/%3E%3C/g%3E%3Cg fill='%23ffffff'%3E%3Crect x='150' y='300' width='180' height='10' rx='5' opacity='0.6'/%3E%3C/g%3E%3C/svg%3E" alt="幕后视频封面：黑色背景中的剪辑时间线与轨道示意" width="640" height="360">
+            <span class="gc-video-time">14:56</span>
+          </div>
+          <div class="gc-video-body">
+            <h3 class="gc-video-title">一条 15 分钟爆料片，我们删掉了 4 小时素材</h3>
+            <p class="gc-video-desc">剪辑师打开工程文件，逐帧讲解哪些画面必须放弃，以及为什么。</p>
+            <div class="gc-video-meta">
+              <span class="gc-avatar" style="background:#e08d1a">苏</span>
+              <span>苏剪影</span>
+              <span>· 3.7 万</span>
+              <div class="gc-video-actions">
+                <button class="gc-icon-btn gc-like-btn" data-base="3120">👍 3120</button>
+                <button class="gc-icon-btn gc-fav-btn">☆ 收藏</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="gc-video-card gc-stream-card gc-show" data-cat="life">
+          <div class="gc-video-cover">
+            <span class="gc-video-badge">生活</span>
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23f6efe7'/%3E%3Ccircle cx='470' cy='90' r='70' fill='%23f4a261'/%3E%3Cpath d='M0 300 Q160 220 320 280 T640 260 L640 360 L0 360 Z' fill='%232a9d8f' opacity='0.7'/%3E%3Cg fill='%2322223b'%3E%3Crect x='80' y='150' width='120' height='70' rx='8'/%3E%3Crect x='100' y='120' width='80' height='30' rx='6'/%3E%3C/g%3E%3Cg fill='%23e63946'%3E%3Ccircle cx='340' cy='180' r='26'/%3E%3Crect x='314' y='206' width='52' height='64' rx='20'/%3E%3C/g%3E%3C/svg%3E" alt="生活视频封面：米色背景里的午后阳台与绿植剪影" width="640" height="360">
+            <span class="gc-video-time">06:33</span>
+          </div>
+          <div class="gc-video-body">
+            <h3 class="gc-video-title">在吵了十年的老小区，我拍到了最好的邻里关系</h3>
+            <p class="gc-video-desc">没有滤镜，没有煽情配乐，只有晾衣绳、棋牌桌和一份共享的修锁师傅通讯录。</p>
+            <div class="gc-video-meta">
+              <span class="gc-avatar" style="background:#6a8d73">郑</span>
+              <span>郑小满</span>
+              <span>· 6.2 万</span>
+              <div class="gc-video-actions">
+                <button class="gc-icon-btn gc-like-btn" data-base="5310">👍 5310</button>
+                <button class="gc-icon-btn gc-fav-btn">☆ 收藏</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="gc-video-card gc-stream-card gc-show" data-cat="scene">
+          <div class="gc-video-cover">
+            <span class="gc-video-badge">现场</span>
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%234a4e69'/%3E%3Cg stroke='%23ffffff' stroke-width='2' opacity='0.25'%3E%3Cpath d='M0 260 L640 180'/%3E%3Cpath d='M0 300 L640 220'/%3E%3Cpath d='M0 220 L640 140'/%3E%3C/g%3E%3Cg fill='%23f4a261'%3E%3Crect x='90' y='120' width='70' height='140' rx='5'/%3E%3Crect x='190' y='150' width='50' height='110' rx='5'/%3E%3C/g%3E%3Cg fill='%23ffffff' opacity='0.75'%3E%3Ccircle cx='420' cy='140' r='34'/%3E%3C/g%3E%3Cg fill='%2322223b'%3E%3Crect x='380' y='176' width='80' height='84' rx='26'/%3E%3C/g%3E%3C/svg%3E" alt="现场视频封面：蓝灰调交通枢纽与等待的人群" width="640" height="360">
+            <span class="gc-video-time">11:47</span>
+          </div>
+          <div class="gc-video-body">
+            <h3 class="gc-video-title">滞留六小时：一场突发天气里的车站广播与人群</h3>
+            <p class="gc-video-desc">没有戏剧冲突，只有反复播放的通知和时间一点点推移的疲惫。</p>
+            <div class="gc-video-meta">
+              <span class="gc-avatar" style="background:#4a4e69">白</span>
+              <span>白露生</span>
+              <span>· 2.9 万</span>
+              <div class="gc-video-actions">
+                <button class="gc-icon-btn gc-like-btn" data-base="2064">👍 2064</button>
+                <button class="gc-icon-btn gc-fav-btn">☆ 收藏</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="gc-video-card gc-stream-card gc-show" data-cat="talk">
+          <div class="gc-video-cover">
+            <span class="gc-video-badge">访谈</span>
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%238d5b9b'/%3E%3Cg fill='%23ffffff' opacity='0.14'%3E%3Ccircle cx='320' cy='180' r='150'/%3E%3C/g%3E%3Cg fill='%23ffffff'%3E%3Ccircle cx='260' cy='150' r='36' opacity='0.92'/%3E%3Crect x='224' y='192' width='72' height='70' rx='30' opacity='0.92'/%3E%3C/g%3E%3Cg fill='%2322223b' opacity='0.85'%3E%3Ccircle cx='400' cy='150' r='36'/%3E%3Crect x='364' y='192' width='72' height='70' rx='30'/%3E%3C/g%3E%3C/svg%3E" alt="访谈视频封面：紫色调中的两位讲述者对坐构图" width="640" height="360">
+            <span class="gc-video-time">17:02</span>
+          </div>
+          <div class="gc-video-body">
+            <h3 class="gc-video-title">两位旧货商人的对谈：什么值得被留下来</h3>
+            <p class="gc-video-desc">他们收过婚书、奖状和一堆没人认领的相册，也收过整整一面墙的旧招牌。</p>
+            <div class="gc-video-meta">
+              <span class="gc-avatar" style="background:#8d5b9b">沈</span>
+              <span>沈存物</span>
+              <span>· 3.3 万</span>
+              <div class="gc-video-actions">
+                <button class="gc-icon-btn gc-like-btn" data-base="2790">👍 2790</button>
+                <button class="gc-icon-btn gc-fav-btn">☆ 收藏</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="gc-video-card gc-stream-card gc-show" data-cat="craft">
+          <div class="gc-video-cover">
+            <span class="gc-video-badge">幕后</span>
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23333d4d'/%3E%3Cg fill='%23f4a261' opacity='0.9'%3E%3Crect x='70' y='90' width='160' height='14' rx='7'/%3E%3Crect x='70' y='120' width='110' height='10' rx='5' opacity='0.6'/%3E%3C/g%3E%3Cg stroke='%23e63946' stroke-width='3' fill='none'%3E%3Cpath d='M70 250 L180 180 L290 230 L400 160 L520 210 L600 170'/%3E%3C/g%3E%3Cg fill='%23ffffff' opacity='0.9'%3E%3Crect x='360' y='70' width='210' height='60' rx='10'/%3E%3C/g%3E%3Cg fill='%2322223b'%3E%3Crect x='380' y='88' width='120' height='9' rx='4'/%3E%3Crect x='380' y='106' width='160' height='9' rx='4' opacity='0.55'/%3E%3C/g%3E%3C/svg%3E" alt="幕后视频封面：深蓝灰色调的画面标注与语音波形示意" width="640" height="360">
+            <span class="gc-video-time">10:19</span>
+          </div>
+          <div class="gc-video-body">
+            <h3 class="gc-video-title">给画面打码有讲究：我们如何保护无关路人</h3>
+            <p class="gc-video-desc">从识别、跟踪到逐帧修正，一条关于后期伦理的技术流程说明。</p>
+            <div class="gc-video-meta">
+              <span class="gc-avatar" style="background:#333d4d">程</span>
+              <span>程后期</span>
+              <span>· 1.9 万</span>
+              <div class="gc-video-actions">
+                <button class="gc-icon-btn gc-like-btn" data-base="1620">👍 1620</button>
+                <button class="gc-icon-btn gc-fav-btn">☆ 收藏</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+        <article class="gc-video-card gc-stream-card gc-show" data-cat="life">
+          <div class="gc-video-cover">
+            <span class="gc-video-badge">生活</span>
+            <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 360'%3E%3Crect width='640' height='360' fill='%23e9e3d5'/%3E%3Cg fill='%236a8d73'%3E%3Ccircle cx='140' cy='130' r='60'/%3E%3Ccircle cx='200' cy='170' r='44' opacity='0.8'/%3E%3C/g%3E%3Cg fill='%23e63946'%3E%3Crect x='330' y='150' width='180' height='110' rx='12'/%3E%3C/g%3E%3Cg fill='%23ffffff'%3E%3Crect x='352' y='176' width='100' height='12' rx='6'/%3E%3Crect x='352' y='200' width='70' height='10' rx='5' opacity='0.7'/%3E%3C/g%3E%3Cg fill='%2322223b'%3E%3Crect x='90' y='240' width='180' height='12' rx='6' opacity='0.5'/%3E%3C/g%3E%3C/svg%3E" alt="生活视频封面：米灰背景下的小店招牌与绿植" width="640" height="360">
+            <span class="gc-video-time">08:44</span>
+          </div>
+          <div class="gc-video-body">
+            <h3 class="gc-video-title">一家开了十八年的杂货店，和它的第二块招牌</h3>
+            <p class="gc-video-desc">老板说不打算做网红，但愿意把货架最上层那排老物件讲给你听。</p>
+            <div class="gc-video-meta">
+              <span class="gc-avatar" style="background:#6a8d73">孟</span>
+              <span>孟尝之</span>
+              <span>· 4.8 万</span>
+              <div class="gc-video-actions">
+                <button class="gc-icon-btn gc-like-btn" data-base="4256">👍 4256</button>
+                <button class="gc-icon-btn gc-fav-btn">☆ 收藏</button>
+              </div>
+            </div>
+          </div>
+        </article>
+
+      </div>
+      <p id="gcFilterTip" style="margin-top:20px;font-size:13px;color:#4a4a55"></p>
+    </div>
+  </section>
+
+  <!-- 专题企划 -->
+  <section class="gc-section" id="gc-topic">
+    <div class="gc-container">
+      <div class="gc-section-head">
+        <h2 class="gc-h2">专题企划</h2>
+        <p class="gc-section-sub">以系列化的方式追踪一个议题，让碎片化的信息有机会连成完整的线索。</p>
+      </div>
+      <div class="gc-topic-grid">
+        <a href="#gc-focus" class="gc-topic-card">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 400'%3E%3Crect width='640' height='400' fill='%2322223b'/%3E%3Cg stroke='%23f4a261' stroke-width='3' fill='none' opacity='0.85'%3E%3Cpath d='M80 320 Q200 200 320 260 T560 180'/%3E%3C/g%3E%3Cg fill='%23e63946'%3E%3Ccircle cx='200' cy='240' r='12'/%3E%3Ccircle cx='440' cy='216' r='12'/%3E%3C/g%3E%3Cg fill='%23ffffff'%3E%3Crect x='80' y='80' width='240' height='20' rx='10'/%3E%3Crect x='80' y='116' width='150' height='12' rx='6' opacity='0.5'/%3E%3C/g%3E%3C/svg%3E" alt="专题封面：城市暗线系列的深色路线图视觉" width="640" height="400">
+          <span class="gc-topic-tag">系列专题</span>
+          <h3>城市暗线 · 第二季</h3>
+          <p>走进那些不被注意的角落，和在那里生活、工作、坚持的人聊一聊。</p>
+          <span class="gc-topic-state">更新至第 5 期 · 每周四更新</span>
+        </a>
+        <a href="#gc-stream" class="gc-topic-card">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 400'%3E%3Crect width='640' height='400' fill='%232a9d8f'/%3E%3Cg fill='%23ffffff' opacity='0.15'%3E%3Ccircle cx='160' cy='130' r='90'/%3E%3Ccircle cx='500' cy='280' r='110'/%3E%3C/g%3E%3Cg fill='%23ffffff'%3E%3Crect x='300' y='120' width='180' height='18' rx='9'/%3E%3Crect x='300' y='152' width='120' height='11' rx='5' opacity='0.6'/%3E%3C/g%3E%3Cg fill='%23f4a261'%3E%3Crect x='290' y='212' width='120' height='42' rx='21'/%3E%3C/g%3E%3C/svg%3E" alt="专题封面：青绿色调的事实核验公开课海报视觉" width="640" height="400">
+          <span class="gc-topic-tag">公开课</span>
+          <h3>事实核验十讲</h3>
+          <p>从时间线比对到影像溯源，编辑团队把工作方法拆成十节可以自学的课。</p>
+          <span class="gc-topic-state">已完结 10 讲 · 配套工具包开放下载</span>
+        </a>
+        <a href="#gc-creator" class="gc-topic-card">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 640 400'%3E%3Crect width='640' height='400' fill='%238d5b9b'/%3E%3Cg fill='%23ffffff' opacity='0.16'%3E%3Crect x='90' y='90' width='200' height='220' rx='14'/%3E%3Crect x='330' y='130' width='220' height='180' rx='14'/%3E%3C/g%3E%3Cg fill='%23f4a261'%3E%3Ccircle cx='190' cy='170' r='38'/%3E%3Ccircle cx='440' cy='210' r='38'/%3E%3C/g%3E%3Cg fill='%2322223b'%3E%3Crect x='140' y='230' width='100' height='14' rx='7'/%3E%3Crect x='390' y='270' width='100' height='14' rx='7'/%3E%3C/g%3E%3C/svg%3E" alt="专题封面：紫色调的新人创作者扶持计划视觉" width="640" height="400">
+          <span class="gc-topic-tag">创作者计划</span>
+          <h3>新人镜头扶持计划</h3>
+          <p>为第一次拿起相机的记录者提供设备、剪辑指导与基础分成保障。</p>
+          <span class="gc-topic-state">2026 冬季批次 · 报名中</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- 创作者 -->
+  <section class="gc-section" id="gc-creator">
+    <div class="gc-container">
+      <div class="gc-section-head">
+        <h2 class="gc-h2">创作者矩阵</h2>
+        <p class="gc-section-sub">他们是这个平台的骨架。点击卡片可以查看作者简介与代表作品。</p>
+      </div>
+      <div class="gc-creator-grid">
+        <article class="gc-creator-card" data-creator="徐闻野|城市现场记录者，长期跟拍街区改造与居民议事，主张「先把时间线理清楚再下判断」。|286 部作品|18.6 万关注">
+          <div class="gc-creator-avatar" style="background:linear-gradient(135deg,#e63946,#f4a261)">徐</div>
+          <h3 class="gc-creator-name">徐闻野</h3>
+          <p class="gc-creator-field">城市现场 · 深度记录</p>
+          <p class="gc-creator-bio">跟拍街区改造六年，习惯先画时间线再开机，代表作《48 小时追踪》系列。</p>
+          <div class="gc-creator-nums">
+            <div><b>286</b><span>作品</span></div>
+            <div><b>18.6万</b><span>关注</span></div>
+          </div>
+        </article>
+        <article class="gc-creator-card" data-creator="林砚秋|人物访谈编导，擅长让沉默的人开口，作品多为长镜头对话。|164 部作品|12.4 万关注">
+          <div class="gc-creator-avatar" style="background:linear-gradient(135deg,#22223b,#4a4e69)">林</div>
+          <h3 class="gc-creator-name">林砚秋</h3>
+          <p class="gc-creator-field">人物访谈 · 长镜叙事</p>
+          <p class="gc-creator-bio">相信沉默也是回答。她的访谈常常保留长时间的停顿与空白。</p>
+          <div class="gc-creator-nums">
+            <div><b>164</b><span>作品</span></div>
+            <div><b>12.4万</b><span>关注</span></div>
+          </div>
+        </article>
+        <article class="gc-creator-card" data-creator="吴知言|事实核验方向的知识科普作者，前媒体校对，擅长影像取证。|212 部作品|15.1 万关注">
+          <div class="gc-creator-avatar" style="background:linear-gradient(135deg,#2a9d8f,#6a8d73)">吴</div>
+          <h3 class="gc-creator-name">吴知言</h3>
+          <p class="gc-creator-field">知识科普 · 事实核验</p>
+          <p class="gc-creator-bio">用最朴素的方法教人识别拼接视频，视频节奏快、信息密度高。</p>
+          <div class="gc-creator-nums">
+            <div><b>212</b><span>作品</span></div>
+            <div><b>15.1万</b><span>关注</span></div>
+          </div>
+        </article>
+        <article class="gc-creator-card" data-creator="郑小满|生活影像作者，拍小区、菜场与街边小店，风格温和。|330 部作品|21.2 万关注">
+          <div class="gc-creator-avatar" style="background:linear-gradient(135deg,#6a8d73,#f4a261)">郑</div>
+          <h3 class="gc-creator-name">郑小满</h3>
+          <p class="gc-creator-field">生活记录 · 邻里日常</p>
+          <p class="gc-creator-bio">不写脚本，随身带一台小机器，专门拍那些「没什么大事」的下午。</p>
+          <div class="gc-creator-nums">
+            <div><b>330</b><span>作品</span></div>
+            <div><b>21.2万</b><span>关注</span></div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 故事随笔 -->
+  <section class="gc-section gc-story-wrap" id="gc-story">
+    <div class="gc-container">
+      <div class="gc-section-head">
+        <h2 class="gc-h2">编辑手记</h2>
+        <p class="gc-section-sub">镜头之外的文字，记录我们做选题时的犹豫、讨论与坚持。</p>
+      </div>
+      <div class="gc-story-grid">
+        <article class="gc-story-card">
+          <h3>我们为什么很少用「震惊」这两个字</h3>
+          <p>标题是内容的第一道门槛。编辑会上有个不成文的规矩：如果一条标题去掉情绪词就什么也没说，那说明这条内容还没准备好。我们更愿意花时间把事件的来龙去脉说清楚，而不是用一个惊叹号把人骗进来，再让人失望地划走。这种克制在短期数据上未必好看，但两年下来，回访率给出了答案。</p>
+          <div class="gc-story-author"><span class="gc-avatar" style="background:#e63946">编</span> 编辑部 · 2026.11.12</div>
+        </article>
+        <article class="gc-story-card">
+          <h3>一次被撤下的选题：当真相还不够清楚</h3>
+          <p>十月中旬，我们完成了某起纠纷的全部素材，剪辑也过了终审。但在最后一轮事实核对里，一位关键当事人的说法前后矛盾，而我们没有第二个来源。片子最终没有上线，素材归档进了待核验库。这不是浪费，而是一种必要的耐心——观众可以等，但被错误指认的人等不起这个清白。</p>
+          <div class="gc-story-author"><span class="gc-avatar" style="background:#f4a261">核</span> 核验组 · 2026.10.28</div>
+        </article>
+        <article class="gc-story-card">
+          <h3>驻站三个月，我学会在小城等待</h3>
+          <p>小城的节奏和都市完全不同。你约不到人，因为对方在收摊；你拍不到冲突，因为邻里早就互相认识。于是我学会坐在店门口喝一整下午的茶，等一个愿意开口的瞬间。那些片段后来成了专题里最受欢迎的一集，因为它不是被追问出来的，而是被时间养出来的。</p>
+          <div class="gc-story-author"><span class="gc-avatar" style="background:#2a9d8f">驻</span> 驻站作者 · 2026.09.19</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 作品墙 -->
+  <section class="gc-section" id="gc-wall">
+    <div class="gc-container">
+      <div class="gc-section-head gc-section-head-flex">
+        <div>
+          <h2 class="gc-h2">社区影像墙</h2>
+          <p class="gc-section-sub">来自创作者与用户投稿的静态影像，本期主题：日常里的证据。</p>
+        </div>
+        <a href="#gc-contact" class="gc-section-link">上传你的作品 →</a>
+      </div>
+      <div class="gc-wall">
+        <div class="gc-wall-item gc-wall-big">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 600'%3E%3Crect width='800' height='600' fill='%2322223b'/%3E%3Cg fill='%23f4a261' opacity='0.9'%3E%3Crect x='120' y='360' width='560' height='180' rx='10'/%3E%3C/g%3E%3Cg fill='%23e63946'%3E%3Ccircle cx='260' cy='230' r='70'/%3E%3C/g%3E%3Cg fill='%23ffffff' opacity='0.8'%3E%3Crect x='120' y='120' width='260' height='20' rx='10'/%3E%3Crect x='120' y='158' width='180' height='12' rx='6' opacity='0.5'/%3E%3C/g%3E%3Cg stroke='%23ffffff' stroke-width='2' opacity='0.2'%3E%3Cpath d='M0 420 L800 320'/%3E%3C/g%3E%3C/svg%3E" alt="影像墙作品：夜色中亮起的街区招牌与行人剪影">
+          <span>《招牌亮起的那一刻》· 徐闻野</span>
+        </div>
+        <div class="gc-wall-item">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23f4a261'/%3E%3Cg fill='%2322223b'%3E%3Ccircle cx='200' cy='130' r='46'/%3E%3Crect x='160' y='176' width='80' height='82' rx='30'/%3E%3C/g%3E%3Cg fill='%23ffffff' opacity='0.6'%3E%3Crect x='40' y='40' width='120' height='12' rx='6'/%3E%3C/g%3E%3C/svg%3E" alt="影像墙作品：暖橙背景下的手艺人半身剪影">
+          <span>《补碗的人》· 孟尝之</span>
+        </div>
+        <div class="gc-wall-item">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%232a9d8f'/%3E%3Cg stroke='%23ffffff' stroke-width='3' opacity='0.7' fill='none'%3E%3Ccircle cx='200' cy='150' r='70'/%3E%3Ccircle cx='200' cy='150' r='42'/%3E%3C/g%3E%3Cg fill='%23f4a261'%3E%3Ccircle cx='200' cy='150' r='14'/%3E%3C/g%3E%3C/svg%3E" alt="影像墙作品：青绿色背景中的圆形光学检测图案">
+          <span>《逐帧比对》· 吴知言</span>
+        </div>
+        <div class="gc-wall-item gc-wall-wide">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 800 300'%3E%3Crect width='800' height='300' fill='%234a4e69'/%3E%3Cg fill='%23ffffff' opacity='0.18'%3E%3Crect x='0' y='200' width='800' height='100'/%3E%3C/g%3E%3Cg fill='%23f4a261'%3E%3Crect x='100' y='90' width='90' height='120' rx='7'/%3E%3Crect x='230' y='120' width='70' height='90' rx='7' opacity='0.8'/%3E%3C/g%3E%3Cg fill='%23ffffff' opacity='0.7'%3E%3Crect x='420' y='110' width='260' height='14' rx='7'/%3E%3Crect x='420' y='140' width='180' height='10' rx='5' opacity='0.5'/%3E%3C/g%3E%3C/svg%3E" alt="影像墙作品：蓝灰色调的街角建筑群与空旷人行道">
+          <span>《空下来的下午》· 白露生</span>
+        </div>
+        <div class="gc-wall-item">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%23e9e3d5'/%3E%3Cg fill='%236a8d73'%3E%3Ccircle cx='130' cy='120' r='56'/%3E%3Ccircle cx='200' cy='160' r='38' opacity='0.8'/%3E%3C/g%3E%3Cg fill='%23e63946'%3E%3Crect x='210' y='160' width='120' height='80' rx='9'/%3E%3C/g%3E%3Cg fill='%23ffffff'%3E%3Crect x='228' y='184' width='70' height='10' rx='5'/%3E%3C/g%3E%3C/svg%3E" alt="影像墙作品：米灰背景中的绿色植物与红色招牌">
+          <span>《门口的绿植》· 郑小满</span>
+        </div>
+        <div class="gc-wall-item">
+          <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 400 300'%3E%3Crect width='400' height='300' fill='%238d5b9b'/%3E%3Cg fill='%23ffffff' opacity='0.9'%3E%3Crect x='70' y='80' width='120' height='150' rx='10'/%3E%3Crect x='210' y='110' width='120' height='120' rx='10' opacity='0.75'/%3E%3C/g%3E%3Cg fill='%2322223b'%3E%3Crect x='92' y='106' width='76' height='10' rx='5'/%3E%3Crect x='232' y='136' width='76' height='10' rx='5'/%3E%3C/g%3E%3C/svg%3E" alt="影像墙作品：紫色背景中并排陈列的两张旧相册封面">
+          <span>《旧相册》· 沈存物</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 用户评价 -->
+  <section class="gc-section" id="gc-review">
+    <div class="gc-container">
+      <div class="gc-section-head">
+        <h2 class="gc-h2">社区评价</h2>
+        <p class="gc-section-sub">来自不同使用场景的真实反馈，我们不筛掉批评的声音。</p>
+      </div>
+      <div class="gc-review-grid">
+        <article class="gc-review-card">
+          <h4>终于有人把时间线讲清楚</h4>
+          <p>以前刷到一条爆料只能靠猜，现在会先来这里看有没有整理好的背景梳理。对我来说最大的价值不是热闹，是能看懂到底发生了什么。</p>
+          <div class="gc-review-stars">★★★★★</div>
+          <div class="gc-review-user"><span class="gc-avatar" style="background:#e63946">阿</span> 阿榆 · 普通用户</div>
+        </article>
+        <article class="gc-review-card">
+          <h4>作为创作者，这里的分成比较透明</h4>
+          <p>后台数据能看得很细，播放、完播、收藏都分开统计。上个月的收益明细我核对过两遍，没有出现对不上的情况，这点让人放心。</p>
+          <div class="gc-review-stars">★★★★★</div>
+          <div class="gc-review-user"><span class="gc-avatar" style="background:#2a9d8f">小</span> 小程同学 · 入驻创作者</div>
+        </article>
+        <article class="gc-review-card">
+          <h4>希望部分内容能更快更新</h4>
+          <p>专题制作确实慢，有时候等一周只有一期。虽然知道慢有慢的道理，但作为追更的人还是有点着急，希望以后能增加幕后花絮作为过渡。</p>
+          <div class="gc-review-stars">★★★★☆</div>
+          <div class="gc-review-user"><span class="gc-avatar" style="background:#4a4e69">老</span> 老周 · 三年用户</div>
+        </article>
+        <article class="gc-review-card">
+          <h4>评论区比内容还好看</h4>
+          <p>这里的人会认真补充自己的经历，有人贴出自家那条街的老照片，还有人补充了后续进展。这种补充让一段视频变成了一个持续生长的档案。</p>
+          <div class="gc-review-stars">★★★★★</div>
+          <div class="gc-review-user"><span class="gc-avatar" style="background:#f4a261">茶</span> 茶底色 · 社区活跃用户</div>
+        </article>
+        <article class="gc-review-card">
+          <h4>做社会议题报道，这里的编辑懂行</h4>
+          <p>我们有合作过两次公益项目的拍摄，从选题沟通到成片审核，对接编辑都提出了很专业的修改意见，尤其是关于当事人隐私的部分。</p>
+          <div class="gc-review-stars">★★★★★</div>
+          <div class="gc-review-user"><span class="gc-avatar" style="background:#8d5b9b">合</span> 某公益机构 · 合作方</div>
+        </article>
+        <article class="gc-review-card">
+          <h4>界面能再轻一点就好了</h4>
+          <p>内容我很喜欢，但首页信息密度有点高，手机上滑起来需要一点耐心。期待后续版本可以给出一个更清爽的模式。</p>
+          <div class="gc-review-stars">★★★☆☆</div>
+          <div class="gc-review-user"><span class="gc-avatar" style="background:#b81f2c">麦</span> 麦冬 · 新用户</div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 企业动态 -->
+  <section class="gc-section" id="gc-news">
+    <div class="gc-container">
+      <div class="gc-section-head gc-section-head-flex">
+        <div>
+          <h2 class="gc-h2">企业动态与更新日志</h2>
+          <p class="gc-section-sub">官方发布的产品更新、规则调整与线下活动信息。</p>
+        </div>
+        <a href="#gc-faq" class="gc-section-link">查看常见问题 →</a>
+      </div>
+      <div class="gc-news-list">
+        <div class="gc-news-item">
+          <span class="gc-news-date">2026.11.18</span>
+          <div class="gc-news-title">「城市暗线」第二季第 5 期上线<small>本期跟进某街区搬迁公告的完整执行流程，附带居民议事录音整理。</small></div>
+          <span class="gc-news-type">内容更新</span>
+        </div>
+        <div class="gc-news-item">
+          <span class="gc-news-date">2026.11.10</span>
+          <div class="gc-news-title">事实核验工具包 v2.3 发布<small>新增时间轴自动比对与画面来源登记表模板，面向入驻创作者开放下载。</small></div>
+          <span class="gc-news-type">产品更新</span>
+        </div>
+        <div class="gc-news-item">
+          <span class="gc-news-date">2026.10.29</span>
+          <div class="gc-news-title">新人镜头扶持计划冬季批次开启报名<small>本期计划招募 60 位创作者，提供设备借用、剪辑辅导与基础流量分成。</small></div>
+          <span class="gc-news-type">活动报名</span>
+        </div>
+        <div class="gc-news-item">
+          <span class="gc-news-date">2026.10.15</span>
+          <div class="gc-news-title">社区表达规范第 6 版修订说明<small>细化了对未成年人相关内容与突发事件当事人的呈现要求，全文已公示。</small></div>
+          <span class="gc-news-type">规则调整</span>
+        </div>
+        <div class="gc-news-item">
+          <span class="gc-news-date">2026.09.26</span>
+          <div class="gc-news-title">与三地高校合作的影像叙事工作坊结课<small>本期共完成 9 组学生作品，主题涵盖社区记忆与公共交通日常。</small></div>
+          <span class="gc-news-type">社会责任</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="gc-section" id="gc-faq">
+    <div class="gc-container">
+      <div class="gc-section-head">
+        <h2 class="gc-h2">帮助中心</h2>
+        <p class="gc-section-sub">关于内容核验、投稿流程与账号使用的常见问题。</p>
+      </div>
+      <div class="gc-faq">
+        <details open>
+          <summary>平台如何判断一条爆料内容的真实性？</summary>
+          <p>我们的核验流程包括来源登记、时间线交叉比对、画面痕检与多方求证四个环节。对于无法确认来源的内容，会明确标注「待核验」并不作为结论性信息推送。涉及具体人物指控的内容，通常要求至少两个独立来源。</p>
+        </details>
+        <details>
+          <summary>投稿后多久能得到回复？</summary>
+          <p>常规投稿在 3 至 5 个工作日内会有初审反馈；涉及公共事件与复杂背景的选题，核验周期可能延长至 10 个工作日。无论采用与否，我们都会通过站内消息告知结果。</p>
+        </details>
+        <details>
+          <summary>创作者的分成是怎么计算的？</summary>
+          <p>基础分成按有效播放与完播率综合计算，同时设置优质内容奖励池。每笔收益在后台都有明细可查，结算周期为自然月，次月 15 日前到账。</p>
+        </details>
+        <details>
+          <summary>我的素材被他人搬运了怎么办？</summary>
+          <p>可通过作品页的举报入口提交原创证明与发布时间截图，核验组会在 48 小时内处理。确认搬运的，平台将下架相关内容并对重复违规账号采取限制措施。</p>
+        </details>
+        <details>
+          <summary>为什么不建议直接发布未经处理的当事人画面？</summary>
+          <p>这既是对当事人的保护，也是对内容公信力的保护。我们建议对未成年人、非涉事旁观者以及明确表达不愿出镜的人进行画面处理，编辑也会在终审环节进行复核。</p>
+        </details>
+        <details>
+          <summary>可以申请素材授权用于二次创作吗？</summary>
+          <p>可以。在作品页提交授权申请，说明用途与发布渠道，版权方同意后会提供高清素材包。商业用途需另行签署授权协议，具体可联系内容合作邮箱。</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- 联系与投稿 -->
+  <section class="gc-section" id="gc-contact">
+    <div class="gc-container">
+      <div class="gc-contact-wrap">
+        <div>
+          <h2 class="gc-h2" style="color:#fff">线索投稿 · 内容合作</h2>
+          <p>如果你手上有值得被记录的现场，或者希望与我们联合制作专题内容，欢迎联系。每一条线索都会被登记，并交由对应方向的编辑跟进。911吃瓜爆料网 持续运营至今，最看重的仍是每一个愿意认真讲述的人。</p>
+          <div class="gc-contact-actions">
+            <button class="gc-btn gc-btn-primary" data-open-modal="gcSubmitModal">立即投稿</button>
+            <button class="gc-btn gc-btn-ghost" data-open-modal="gcShareModal">分享给朋友</button>
+            <button class="gc-btn gc-btn-ghost" data-open-modal="gcFeedbackModal">意见反馈</button>
+          </div>
+        </div>
+        <ul class="gc-contact-info">
+          <li><b>内容合作</b><span>coop@911news.example</span></li>
+          <li><b>线索投稿</b><span>tip@911news.example</span></li>
+          <li><b>版权事务</b><span>rights@911news.example</span></li>
+          <li><b>工作时间</b><span>周一至周五 10:00–19:00</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="gc-footer">
+  <div class="gc-container">
+    <div class="gc-footer-top">
+      <div>
+        <div class="gc-footer-brand">
+          <span class="gc-logo-mark" style="width:32px;height:32px;font-size:14px;border-radius:9px">911</span>
+          <span>911吃瓜爆料网</span>
+        </div>
+        <p>911吃瓜爆料网官方网站，是一家以热点记录与社区讨论为核心的视频内容企业。我们坚持原创、正版、高清的内容标准，以专业与匠心服务创作者与用户，深耕垂直领域，构建值得信赖的内容生态。</p>
+      </div>
+      <div>
+        <h5>内容导航</h5>
+        <ul>
+          <li><a href="#gc-focus">焦点视频</a></li>
+          <li><a href="#gc-stream">热门内容</a></li>
+          <li><a href="#gc-topic">专题企划</a></li>
+          <li><a href="#gc-wall">社区影像墙</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>关于平台</h5>
+        <ul>
+          <li><a href="#gc-about">品牌定位</a></li>
+          <li><a href="#gc-creator">创作者矩阵</a></li>
+          <li><a href="#gc-news">企业动态</a></li>
+          <li><a href="#gc-review">社区评价</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>支持与联系</h5>
+        <ul>
+          <li><a href="#gc-faq">帮助中心</a></li>
+          <li><a href="#gc-contact">投稿入口</a></li>
+          <li><a href="#gc-contact">内容合作</a></li>
+          <li><a href="#gc-contact">版权事务</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="gc-footer-bottom">
+      <span>© 2019–2026 911吃瓜爆料网 官方网站 · 版权所有 · 持续运营中</span>
+      <span>内容核验 · 版权声明 · 社区规范 · 用户至上</span>
+    </div>
+  </div>
+</footer>
+
+<button class="gc-top-btn" id="gcTopBtn" aria-label="回到顶部">↑</button>
+<div class="gc-toast" id="gcToast" role="status" aria-live="polite"></div>
+
+<!-- 投稿弹窗 -->
+<div class="gc-modal-mask" id="gcSubmitModal" role="dialog" aria-modal="true" aria-label="投稿表单">
+  <div class="gc-modal gc-modal-wrap">
+    <button class="gc-modal-close" data-close-modal aria-label="关闭">×</button>
+    <h3>提交你的线索或作品</h3>
+    <p>请尽量填写事件发生时间与可核实的信息来源，编辑会在 3 至 5 个工作日内给予反馈。</p>
+    <form id="gcSubmitForm">
+      <label for="gcSubmitName">称呼</label>
+      <input id="gcSubmitName" type="text" placeholder="怎么称呼你" required>
+      <label for="gcSubmitContact">联系方式</label>
+      <input id="gcSubmitContact" type="text" placeholder="邮箱或手机号" required>
+      <label for="gcSubmitType">投稿类型</label>
+      <select id="gcSubmitType">
+        <option>现场线索</option>
+        <option>原创影像作品</option>
+        <option>人物线索</option>
+        <option>内容合作</option>
+      </select>
+      <label for="gcSubmitDesc">内容说明</label>
+      <textarea id="gcSubmitDesc" placeholder="简要描述事件时间、地点与可核实来源" required></textarea>
+      <div class="gc-modal-actions">
+        <button type="button" class="gc-btn gc-btn-ghost" data-close-modal>取消</button>
+        <button type="submit" class="gc-btn gc-btn-primary">提交</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- 分享弹窗 -->
+<div class="gc-modal-mask" id="gcShareModal" role="dialog" aria-modal="true" aria-label="分享">
+  <div class="gc-modal gc-modal-wrap">
+    <button class="gc-modal-close" data-close-modal aria-label="关闭">×</button>
+    <h3>分享 911吃瓜爆料网</h3>
+    <p>把感兴趣的内容转给朋友，一起看见更完整的现场。</p>
+    <div class="gc-share-row">
+      <button data-share="微信">微信</button>
+      <button data-share="微博">微博</button>
+      <button data-share="QQ">QQ</button>
+      <button data-share="朋友圈">朋友圈</button>
+    </div>
+    <label for="gcShareLink">页面链接</label>
+    <input id="gcShareLink" type="text" value="https://www.911news.example" readonly>
+    <div class="gc-modal-actions">
+      <button type="button" class="gc-btn gc-btn-ghost" data-close-modal>关闭</button>
+      <button type="button" class="gc-btn gc-btn-primary" id="gcCopyLink">复制链接</button>
+    </div>
+  </div>
+</div>
+
+<!-- 反馈弹窗 -->
+<div class="gc-modal-mask" id="gcFeedbackModal" role="dialog" aria-modal="true" aria-label="意见反馈">
+  <div class="gc-modal gc-modal-wrap">
+    <button class="gc-modal-close" data-close-modal aria-label="关闭">×</button>
+    <h3>意见反馈</h3>
+    <p>产品体验、内容质量或社区氛围，任何建议都欢迎提出。</p>
+    <form id="gcFeedbackForm">
+      <label for="gcFeedbackType">反馈类型</label>
+      <select id="gcFeedbackType">
+        <option>产品体验</option>
+        <option>内容质量</option>
+        <option>社区氛围</option>
+        <option>版权问题</option>
+      </select>
+      <label for="gcFeedbackText">详细说明</label>
+      <textarea id="gcFeedbackText" placeholder="请描述你遇到的问题或建议" required></textarea>
+      <div class="gc-modal-actions">
+        <button type="button" class="gc-btn gc-btn-ghost" data-close-modal>取消</button>
+        <button type="submit" class="gc-btn gc-btn-primary">提交反馈</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- 创作者弹窗 -->
+<div class="gc-modal-mask" id="gcCreatorModal" role="dialog" aria-modal="true" aria-label="创作者信息">
+  <div class="gc-modal gc-modal-wrap">
+    <button class="gc-modal-close" data-close-modal aria-label="关闭">×</button>
+    <h3 id="gcCreatorName">创作者</h3>
+    <p id="gcCreatorBio"></p>
+    <ul class="gc-contact-info" style="background:#faf8f4;border:1px solid #e3ddd3">
+      <li style="border-color:#e3ddd3"><b style="color:#4a4a55">作品数</b><span id="gcCreatorWorks" style="color:#1b1b1f"></span></li>
+      <li style="border:none"><b style="color:#4a4a55">关注数</b><span id="gcCreatorFans" style="color:#1b1b1f"></span></li>
+    </ul>
+    <div class="gc-modal-actions">
+      <button type="button" class="gc-btn gc-btn-primary" data-close-modal>知道了</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  /* 移动端导航 */
+  var burger = document.getElementById('gcBurger');
+  var nav = document.getElementById('gcNav');
+  var navLinks = nav.querySelectorAll('a');
+
+  burger.addEventListener('click', function(){
+    var open = nav.classList.toggle('gc-nav-open');
+    burger.setAttribute('aria-expanded', open ? 'true' : 'false');
+  });
+  navLinks.forEach(function(link){
+    link.addEventListener('click', function(){
+      nav.classList.remove('gc-nav-open');
+      burger.setAttribute('aria-expanded','false');
+      navLinks.forEach(function(l){ l.classList.remove('gc-nav-active'); });
+      link.classList.add('gc-nav-active');
+    });
+  });
+
+  /* Toast */
+  var toast = document.getElementById('gcToast');
+  var toastTimer = null;
+  function showToast(msg){
+    toast.textContent = msg;
+    toast.classList.add('gc-toast-show');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){
+      toast.classList.remove('gc-toast-show');
+    }, 2200);
+  }
+
+  /* 搜索 */
+  var searchInput = document.getElementById('gcSearchInput');
+  var searchBtn = document.getElementById('gcSearchBtn');
+  function doSearch(){
+    var kw = searchInput.value.trim();
+    if(!kw){
+      showToast('请输入想搜索的话题或创作者');
+      return;
+    }
+    var stream = document.getElementById('gc-stream');
+    showToast('正在为你筛选「' + kw + '」相关内容');
+    stream.scrollIntoView({behavior:'smooth', block:'start'});
+    setTimeout(function(){
+      document.getElementById('gcFilterTip').textContent =
+        '已根据「' + kw + '」为你定位到热门内容区，可使用上方标签继续筛选。';
+    }, 500);
+  }
+  searchBtn.addEventListener('click', doSearch);
+  searchInput.addEventListener('keydown', function(e){
+    if(e.key === 'Enter'){ e.preventDefault(); doSearch(); }
+  });
+
+  /* 点赞与收藏 */
+  document.querySelectorAll('.gc-like-btn').forEach(function(btn){
+    btn.addEventListener('click', function(e){
+      e.stopPropagation();
+      var base = parseInt(btn.getAttribute('data-base'), 10) || 0;
+      if(btn.classList.toggle('gc-liked')){
+        btn.textContent = '👍 ' + (base + 1);
+        showToast('已为你点赞');
+      }else{
+        btn.textContent = '👍 ' + base;
+      }
+    });
+  });
+  document.querySelectorAll('.gc-fav-btn').forEach(function(btn){
+    btn.addEventListener('click', function(e){
+      e.stopPropagation();
+      var on = btn.classList.toggle('gc-faved');
+      btn.textContent = on ? '★ 已收藏' : '☆ 收藏';
+      showToast(on ? '已加入收藏夹' : '已取消收藏');
+    });
+  });
+
+  /* 标签筛选 */
+  var tabBtns = document.querySelectorAll('.gc-tab-btn');
+  var streamCards = document.querySelectorAll('.gc-stream-card');
+  var filterTip = document.getElementById('gcFilterTip');
+  var catNames = {all:'全部', scene:'现场', talk:'访谈', craft:'幕后', life:'生活'};
+  tabBtns.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      tabBtns.forEach(function(b){ b.classList.remove('gc-tab-on'); });
+      btn.classList.add('gc-tab-on');
+      var f = btn.getAttribute('data-filter');
+      var count = 0;
+      streamCards.forEach(function(card){
+        var show = (f === 'all') || (card.getAttribute('data-cat') === f);
+        card.classList.toggle('gc-show', show);
+        if(show) count++;
+      });
+      filterTip.textContent = '当前筛选「' + catNames[f] + '」，共 ' + count + ' 条内容。';
+    });
+  });
+
+  /* 弹窗 */
+  var openModal = null;
+  function closeAllModals(){
+    document.querySelectorAll('.gc-modal-mask').forEach(function(m){
+      m.classList.remove('gc-modal-open');
+    });
+    openModal = null;
+  }
+  document.querySelectorAll('[data-open-modal]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var id = btn.getAttribute('data-open-modal');
+      var modal = document.getElementById(id);
+      if(!modal) return;
+      closeAllModals();
+      modal.classList.add('gc-modal-open');
+      openModal = modal;
+    });
+  });
+  document.querySelectorAll('[data-close-modal]').forEach(function(btn){
+    btn.addEventListener('click', closeAllModals);
+  });
+  document.querySelectorAll('.gc-modal-mask').forEach(function(mask){
+    mask.addEventListener('click', function(e){
+      if(e.target === mask) closeAllModals();
+    });
+  });
+  document.addEventListener('keydown', function(e){
+    if(e.key === 'Escape') closeAllModals();
+  });
+
+  /* 投稿表单 */
+  var submitForm = document.getElementById('gcSubmitForm');
+  submitForm.addEventListener('submit', function(e){
+    e.preventDefault();
+    closeAllModals();
+    showToast('投稿已提交，我们会尽快与您联系');
+    submitForm.reset();
+  });
+
+  /* 反馈表单 */
+  var feedbackForm = document.getElementById('gcFeedbackForm');
+  feedbackForm.addEventListener('submit', function(e){
+    e.preventDefault();
+    closeAllModals();
+    showToast('反馈已收到，感谢你的建议');
+    feedbackForm.reset();
+  });
+
+  /* 复制链接 */
+  var copyBtn = document.getElementById('gcCopyLink');
+  copyBtn.addEventListener('click', function(){
+    var linkInput = document.getElementById('gcShareLink');
+    var text = linkInput.value;
+    if(navigator.clipboard && navigator.clipboard.writeText){
+      navigator.clipboard.writeText(text).then(function(){
+        showToast('链接已复制到剪贴板');
+      }).catch(function(){
+        linkInput.select();
+        showToast('请手动复制所选链接');
+      });
+    }else{
+      linkInput.select();
+      showToast('请手动复制所选链接');
+    }
+  });
+
+  /* 分享按钮 */
+  document.querySelectorAll('[data-share]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var name = btn.getAttribute('data-share');
+      showToast('已生成分享卡片，可发送至' + name);
+    });
+  });
+
+  /* 创作者弹窗 */
+  var creatorModal = document.getElementById('gcCreatorModal');
+  document.querySelectorAll('.gc-creator-card').forEach(function(card){
+    card.addEventListener('click', function(){
+      var raw = card.getAttribute('data-creator') || '';
+      var parts = raw.split('|');
+      document.getElementById('gcCreatorName').textContent = parts[0] || '创作者';
+      document.getElementById('gcCreatorBio').textContent = parts[1] || '';
+      document.getElementById('gcCreatorWorks').textContent = parts[2] || '—';
+      document.getElementById('gcCreatorFans').textContent = parts[3] || '—';
+      closeAllModals();
+      creatorModal.classList.add('gc-modal-open');
+      openModal = creatorModal;
+    });
+  });
+
+  /* 回到顶部 */
+  var topBtn = document.getElementById('gcTopBtn');
+  window.addEventListener('scroll', function(){
+    if(window.scrollY > 480){
+      topBtn.classList.add('gc-top-show');
+    }else{
+      topBtn.classList.remove('gc-top-show');
+    }
+  });
+  topBtn.addEventListener('click', function(){
+    window.scrollTo({top:0, behavior:'smooth'});
+  });
+
+  /* 标签云点击 */
+  document.querySelectorAll('#gcTagCloud .gc-tag').forEach(function(tag){
+    tag.addEventListener('click', function(){
+      searchInput.value = tag.textContent;
+      showToast('已填入搜索关键词：' + tag.textContent);
+      document.getElementById('gc-stream').scrollIntoView({behavior:'smooth'});
+    });
+  });
+
+  /* 滚动显现 */
+  var revealTargets = document.querySelectorAll('.gc-video-card, .gc-creator-card, .gc-topic-card, .gc-review-card, .gc-story-card, .gc-wall-item');
+  revealTargets.forEach(function(el){ el.classList.add('gc-reveal'); });
+
+  if('IntersectionObserver' in window){
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if(entry.isIntersecting){
+          entry.target.classList.add('gc-reveal-in');
+          io.unobserve(entry.target);
+        }
+      });
+    }, {threshold:0.12});
+    revealTargets.forEach(function(el){ io.observe(el); });
+  }else{
+    revealTargets.forEach(function(el){ el.classList.add('gc-reveal-in'); });
+  }
+
+  /* 数字滚动 */
+  var counters = document.querySelectorAll('.gc-stat-num');
+  function animateCount(el){
+    var target = parseInt(el.getAttribute('data-count'), 10);
+    if(!target || el.dataset.done) return;
+    el.dataset.done = '1';
+    var current = 0;
+    var step = Math.max(1, Math.floor(target / 48));
+    var suffix = el.textContent.indexOf('%') > -1 ? '%' : '';
+    var timer = setInterval(function(){
+      current += step;
+      if(current >= target){
+        current = target;
+        clearInterval(timer);
+      }
+      el.textContent = current.toLocaleString('zh-CN') + suffix;
+    }, 24);
+  }
+  if('IntersectionObserver' in window){
+    var co = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if(entry.isIntersecting){
+          animateCount(entry.target);
+          co.unobserve(entry.target);
+        }
+      });
+    }, {threshold:0.4});
+    counters.forEach(function(el){ co.observe(el); });
+  }
+})();
+</script>
+</body>
+  </html>
